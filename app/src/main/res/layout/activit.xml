@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!--Put form controls here-->
+        <TextView
+            android:id="@+id/TextViewTitle"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="@string/feedbacktype1"
+            android:textSize="10pt" />
+
+        <EditText
+            android:id="@+id/EditTextName"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="@string/feedbacktype2"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/EditTextEmail"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="@string/feedbacktype3"
+            android:inputType="textEmailAddress" />
+
+        <Spinner
+            android:id="@+id/SpinnerFeedbackType"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:entries="@array/feedbacktypelist"
+            android:prompt="@array/feedbacktypelist" />
+
+        <EditText
+            android:id="@+id/EditTextFeedbackBody"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Feedback Body"
+            android:inputType="textMultiLine"
+            android:lines="5" />
+
+        <CheckBox
+            android:id="@+id/CheckBoxResponse"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Accept" />
+
+        <Button
+            android:id="@+id/ButtonSendFeedback"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:text="Send Feedback"
+            android:textColor="#fff" />
+    </LinearLayout>
+</ScrollView>
